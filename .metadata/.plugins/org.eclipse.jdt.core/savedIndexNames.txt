@@ -1,0 +1,4 @@
+INDEX VERSION 1.134+D:\PRACTICECODES\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
+3122771675.index
+2218628225.index

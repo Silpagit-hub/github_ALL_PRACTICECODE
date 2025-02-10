@@ -1,0 +1,90 @@
+package com.javaCore;
+
+import java.util.Date;
+
+public class ImmutableClassEx {
+
+	public static void main(String[] args) {
+
+		Teacher t = new Teacher("madam","5th");
+		Date d= new Date(29/01/2025);
+		Student student = new Student("Silpa", 4431, t, d);
+		t.setTeacherName("Sir");
+		System.out.println(student);
+	}
+
+}
+
+final class Student{
+	
+	private final String name;
+	private final int rollNo;
+	private final Teacher teaher;
+	private final Date date;
+	
+	public Student(String name, int rollNo, Teacher teaher, Date date) {
+		super();
+		this.name = name;
+		this.rollNo = rollNo;
+		this.teaher = teaher;
+		this.date = date;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public int getRollNo() {
+		return rollNo;
+	}
+
+	public Teacher getTeaher() {
+		return teaher;
+	}
+
+	public Date getDate() {
+	return new Date(date.getTime());
+		
+	}
+	
+	
+	
+	
+}
+
+class Teacher implements Cloneable{
+	
+	String teacherName;
+	String standard;
+	
+	public Teacher(String teacherName, String standard) {
+		super();
+		this.teacherName = teacherName;
+		this.standard = standard;
+	}
+	
+	
+
+	@Override
+	protected Object clone() throws CloneNotSupportedException {
+		return super.clone();
+	}
+
+	public String getTeacherName() {
+		return teacherName;
+	}
+
+	public void setTeacherName(String teacherName) {
+		this.teacherName = teacherName;
+	}
+
+	public String getStandard() {
+		return standard;
+	}
+
+	public void setStandard(String standard) {
+		this.standard = standard;
+	}
+
+	
+}

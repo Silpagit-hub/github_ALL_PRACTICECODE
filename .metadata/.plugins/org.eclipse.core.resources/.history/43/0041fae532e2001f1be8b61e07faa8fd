@@ -1,0 +1,37 @@
+package com.java8Concept;
+
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
+import java.util.stream.Collectors;
+
+public class DuplicateElement {
+
+	public static void main(String[] args) {
+
+		String name = "Silpa banana banana Silpa xyz";
+		
+		Set<String> set = new HashSet<>();
+		
+		//first Duplicate
+        Arrays.stream(name.split(" "))
+              .filter(word -> !set.add(word))  
+              .findFirst()                      
+              .ifPresentOrElse(
+                  duplicate -> System.out.println("First duplicate: " + duplicate),
+                  () -> System.out.println("No duplicates found")
+              );
+		
+        //second Duplicate 
+        Arrays.stream(name.split(" "))
+        .filter(word -> !set.add(word))  
+        .skip(1).forEach(System.out::println);
+        
+        
+        
+        //All duplicate
+        Arrays.stream(name.split(" ")).distinct().collect(Collectors.toList()).forEach(System.out::println);
+        
+	}
+
+}

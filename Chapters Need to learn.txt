@@ -1,0 +1,122 @@
+Chapter
+---------
+JVM architecture
+Constructor -- DONE
+Polymorphism -- DONE
+Binding -- DONE
+Inheritance -- DONE
+Interface -- DONE
+Abstraction -- DONE
+Encapsulation -- DONE
+Aggregation -- DONE
+Composition (not mandatory) 
+Abstract class -- DONE
+String == Done
+Difference between == and equals method? == Done
+String buffer ==done
+String builder == done
+Exception Handling == done
+Difference between Throw and throws ? == done
+How make our own custome Exception == done
+Reflection API
+Array == done
+Collection == done
+
+When will get Concurrent Modification Exception ? == done
+
+Collections == done
+
+Map == done
+
+Difference between Equals and Hashcode ? == done
+
+How hashMap works internally ?== done
+
+How Concurrent HashMap works ?== done
+
+Comparable== done
+
+Comparator== done
+
+Object class method == done
+
+How many ways we can create object ?
+
+How to make a class immutable? == done
+How to make a class Singleton? == done
+Cloning == done
+Serialization == done
+Stream API
+
+What is Functional interface and why do we used it
+
+Convert a normal interface in to functional interface and call it from main method
+
+What are functional interface available in java
+
+What is optional class and how to use it for null check.
+
+How to iterate a list using stream API
+
+What are the type of stream available
+
+How iterate map using stream API
+
+How to find duplicate in stream API
+
+Find first duplicate and second duplicate in stream API
+
+Find occurrence using Stream API
+
+Find even and odd in Stream API
+
+Find highest salary of an employee using stream API
+
+Sort an employee by its name.
+
+Sort an employee by its ID
+
+Sort an employee by its ID if name are equal.
+
+Find avg salary of an employee as per department wise.
+
+Find highest salary of an employee as per department wise
+
+ What is Bipredicate,BiFunction Biconsumer and Bisupplier interface.
+
+What are terminal and intermediate operations/method in stream
+
+Thread only basic
+
+Executor Framework (basic, I will tell you where to read)
+
+Spring Boot(RESR API)
+JPA
+MICROSERVICES
+Web flux
+Kafka
+jUnit
+MangoDB
+
+
+
+
+Coding
+=========
+prime number
+Fibonacci number
+find duplicate element of array or list
+1st and 2nd duplicate
+find largest number of an array and 2nd largest
+occurrence of a string
+palindrome of a string
+sort an employee by it's name and if names are same sort by its age
+Avg salary of an employee
+Avg salary of an employee as per dept
+find even and odd number and multiply with 3 in odd number
+find non repeated character in string
+
+
+
+
+
